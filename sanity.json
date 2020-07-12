@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "project": {
+    "name": "Frontend Horse"
+  },
+  "api": {
+    "projectId": "i608lu6b",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "markdown",
+    "dark-theme-blue",
+    "seo-tools"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
